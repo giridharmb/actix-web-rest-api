@@ -178,7 +178,11 @@ curl -X GET http://localhost:8090/todolist/entries 2>/dev/null | python3.8 -m js
 #### Create Record
 
 ```bash
-# curl -H "content-type: application/json" -H "accept: application/json" -X POST http://localhost:8090/todolist/entries -d '{"title": "date with wife", "date":1685308792}' 2> /dev/null | python3.8 -m json.tool
+# curl \
+-H "content-type: application/json" \
+-H "accept: application/json" \
+-X POST http://localhost:8090/todolist/entries \
+-d '{"title": "date with wife", "date":1685308792}' 2> /dev/null | python3.8 -m json.tool
 [
     {
         "id": 1,
@@ -191,7 +195,11 @@ curl -X GET http://localhost:8090/todolist/entries 2>/dev/null | python3.8 -m js
 #### Create Record
 
 ```bash
-# curl -H "content-type: application/json" -H "accept: application/json" -X POST http://localhost:8090/todolist/entries -d '{"title": "pick up kids", "date":1685308916}' 2> /dev/null | python3.8 -m json.tool
+# curl \
+-H "content-type: application/json" \
+-H "accept: application/json" \
+-X POST http://localhost:8090/todolist/entries \
+-d '{"title": "pick up kids", "date":1685308916}' 2> /dev/null | python3.8 -m json.tool
 [
     {
         "id": 1,
@@ -209,7 +217,11 @@ curl -X GET http://localhost:8090/todolist/entries 2>/dev/null | python3.8 -m js
 #### Create Record
 
 ```bash
-# curl -H "content-type: application/json" -H "accept: application/json" -X POST http://localhost:8090/todolist/entries -d '{"title": "pick up groceries", "date":1685309090}' 2> /dev/null | python3.8 -m json.tool
+# curl \
+-H "content-type: application/json" \
+-H "accept: application/json" \
+-X POST http://localhost:8090/todolist/entries \
+-d '{"title": "pick up groceries", "date":1685309090}' 2> /dev/null | python3.8 -m json.tool
 [
     {
         "id": 1,
@@ -232,7 +244,11 @@ curl -X GET http://localhost:8090/todolist/entries 2>/dev/null | python3.8 -m js
 #### Update Record
 
 ```bash
-# curl -H "content-type: application/json" -H "accept: application/json" -X PUT http://localhost:8090/todolist/entries/2 -d '{"title": "pick up kids after playing","date":1685309236}' 2> /dev/null | python3.8 -m json.tool
+# curl \
+-H "content-type: application/json" \
+-H "accept: application/json" \
+-X PUT http://localhost:8090/todolist/entries/2 \
+-d '{"title": "pick up kids after playing","date":1685309236}' 2> /dev/null | python3.8 -m json.tool
 [
     {
         "id": 1,
@@ -255,7 +271,10 @@ curl -X GET http://localhost:8090/todolist/entries 2>/dev/null | python3.8 -m js
 #### Fetch Records
 
 ```bash
-# curl -H "content-type: application/json" -H "accept: application/json" -X GET http://localhost:8090/todolist/entries 2> /dev/null | python3.8 -m json.tool
+# curl \
+-H "content-type: application/json" \
+-H "accept: application/json" \
+-X GET http://localhost:8090/todolist/entries 2> /dev/null | python3.8 -m json.tool
 [
     {
         "id": 1,
@@ -278,7 +297,10 @@ curl -X GET http://localhost:8090/todolist/entries 2>/dev/null | python3.8 -m js
 #### Delete Record
 
 ```bash
-# curl -H "content-type: application/json" -H "accept: application/json" -X DELETE http://localhost:8090/todolist/entries/2 2> /dev/null | python3.8 -m json.tool
+# curl \
+-H "content-type: application/json" \
+-H "accept: application/json" \
+-X DELETE http://localhost:8090/todolist/entries/2 2> /dev/null | python3.8 -m json.tool
 [
     {
         "id": 1,
